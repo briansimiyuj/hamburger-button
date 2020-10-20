@@ -22,8 +22,8 @@ body{
 
 .bar{
     background-color: #fff; 
-    height: 30px;
-    width: 100px;
+    height: 60px;
+    width: 300px;
     position: relative;
     display: flex;
 }
