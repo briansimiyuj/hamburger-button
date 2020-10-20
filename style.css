@@ -38,11 +38,11 @@ body{
 }
 
 .bar::before{
-   top: 50px;
+   top: 100px;
 }
 
 .bar::after{
-   bottom: 50px;
+   bottom: 100px;
 }
 
 .hamburger.active .bar::before{
