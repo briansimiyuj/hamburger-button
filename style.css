@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 130px;
+}
+
+.hamburger{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.bar{
+    background-color: #fff; 
+    height: 30px;
+    width: 100px;
+    position: relative;
+    display: flex;
+}
+
+.bar::before, .bar::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: #fff;
+}
+
+.bar::before{
+   top: 50px;
+}
+
+.bar::after{
+   bottom: 50px;
+}
+
+.hamburger.active .bar::before{
+   top: 0;
+   transform: rotate(45deg);
+}
+
+.hamburger.active .bar::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.hamburger.active .bar{
+    background-color: transparent;
+}
